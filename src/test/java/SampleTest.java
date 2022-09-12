@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 public class SampleTest extends  BaseTest{
  @Test
  @UseDataProvider(value = "getDefaultTestCapability",location = LTCapability.class)
- public void sampleTest2(JsonObject capability) {
+ public void sampleTest1(JsonObject capability) {
    Driver driver;
    Page page = null;
    try {
