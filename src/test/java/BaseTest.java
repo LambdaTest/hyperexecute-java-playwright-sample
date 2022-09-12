@@ -12,9 +12,8 @@ public abstract class BaseTest {
     try {
       Playwright playwright = Playwright.create();
       String caps = URLEncoder.encode(cap.toString(), "utf-8");
-//      String cdpUrl = "wss://cdp.lambdatest.com/playwright?capabilities=" + caps;
-      Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
-//      Browser browser = playwright.chromium().connect(cdpUrl);
+      String cdpUrl = "wss://cdp.lambdatest.com/playwright?capabilities=" + caps;
+      Browser browser = playwright.chromium().connect(cdpUrl);
       Page page = browser.newPage();
       return new Driver(browser,page);
     }

@@ -7,12 +7,10 @@ public class LTCapability {
     JsonObject capabilities1 = new JsonObject();
     JsonObject ltOptions1 = new JsonObject();
 
-    // String user = System.getenv("LT_USERNAME") == null ? "LT_USERNAME" :
-    //         System.getenv("LT_USERNAME");
-    // String accessKey = System.getenv("LT_ACCESS_KEY") == null ? "LT_ACCESS_KEY" :
-    //         System.getenv("LT_ACCESS_KEY");
-    String user = "shirishs";
-    String accessKey = "0DVYxEohPPqd18hSNEZZeXKVarg5gEDOB3Ww81WfpniiKMTBhP";
+    String user = System.getenv("LT_USERNAME") == null ? "LT_USERNAME" :
+            System.getenv("LT_USERNAME");
+    String accessKey = System.getenv("LT_ACCESS_KEY") == null ? "LT_ACCESS_KEY" :
+            System.getenv("LT_ACCESS_KEY");
 
     capabilities1.addProperty("browserName", "Chrome"); // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
     capabilities1.addProperty("browserVersion", "latest");
@@ -25,19 +23,6 @@ public class LTCapability {
     ltOptions1.addProperty("console", true);
     capabilities1.add("LT:Options", ltOptions1);
 
-
-    JsonObject capabilities2 = new JsonObject();
-    JsonObject ltOptions2 = new JsonObject();
-    capabilities2.addProperty("browserName", "Chrome"); // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
-    capabilities2.addProperty("browserVersion", "latest");
-    ltOptions2.addProperty("platform", "Windows 10");
-    ltOptions2.addProperty("name", "Playwright HyperExecute Test");
-    ltOptions2.addProperty("build", "Playwright HyperExecute Build");
-    ltOptions2.addProperty("user", user);
-    ltOptions2.addProperty("accessKey", accessKey);
-    ltOptions2.addProperty("video", true);
-    ltOptions2.addProperty("console", true);
-    capabilities2.add("LT:Options", ltOptions2);
     return new Object[]{
       capabilities1
     };

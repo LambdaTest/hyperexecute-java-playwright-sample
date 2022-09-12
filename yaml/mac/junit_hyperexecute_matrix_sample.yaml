@@ -28,7 +28,7 @@ shell: bash
 pre:
   # Download and install packages in the CACHE_DIR.
   # Skip execution of the tests in the pre step
-  - npm install playwright
+  - npm install playwright@1.23.0 --save-exact
   - mvn -Dmaven.repo.local=$CACHE_DIR -Dmaven.test.skip=true clean install
 
 post:
@@ -45,4 +45,4 @@ uploadArtefacts:
     - target/surefire-reports/**
 
 testSuites:
-  - mvn -Dplatname=mac -Dmaven.repo.local=m2_cache_dir -Dtest=$classname test site surefire-report:report
+  - mvn -Dplatname=mac -Dmaven.repo.local=m2_cache_dir -Dtest=$classname test surefire-report:report
