@@ -184,7 +184,7 @@ testRunnerCommand: mvn -Dplatname=win -Dmaven.repo.local=m2_cache_dir -Dtest=$te
 
 The *mergeArtifacts* directive (which is by default *false*) is set to *true* for merging the artifacts and combing artifacts generated under each task.
 
-The uploadArtefacts directive informs HyperExecute to upload artifacts [files, reports, etc.] generated after task completion. In the example, path consists of a regex for parsing the site and sure-fire reports (i.e. target/site/ and target/surefire-reports/) directory.
+The uploadArtefacts directive informs HyperExecute to upload artifacts [files, reports, etc.] generated after task completion. In the example, path consists of a regex for parsing the sure-fire reports (i.e. target/surefire-reports/) directory.
 
 ```yaml
 mergeArtifacts: true
@@ -241,7 +241,7 @@ Also, the *key:value* pairs are opaque strings for HyperExecute. For more inform
 
 ### Core
 
-In the current example, matrix YAML file (*yaml/win/cucumber_hyperexecute_matrix_sample.yaml*) in the repo contains the following configuration:
+In the current example, matrix YAML file (*yaml/win/junit_hyperexecute_matrix_sample.yaml*) in the repo contains the following configuration:
 
 ```yaml
 globalTimeout: 150
@@ -299,14 +299,14 @@ Steps (or commands) that need to run after the test execution are listed in the 
 
 ```yaml
 post:
-  - cat yaml/win/cucumber_hyperexecute_matrix_sample.yaml
+  - cat yaml/win/junit_hyperexecute_matrix_sample.yaml
 ```
 
 ### Artifacts Management
 
 The mergeArtifacts directive (which is by default false) is set to true for merging the artifacts and combing artifacts generated under each task.
 
-The uploadArtefacts directive informs HyperExecute to upload artifacts [files, reports, etc.] generated after task completion. In the example, path consists of a regex for parsing the site and sure-fire reports (i.e. target/site/ and target/surefire-reports/) directory.
+The uploadArtefacts directive informs HyperExecute to upload artifacts [files, reports, etc.] generated after task completion. In the example, path consists of a regex for parsing the sure-fire reports (i.e. target/surefire-reports/) directory.
 
 ```yaml
 mergeArtifacts: true
@@ -329,15 +329,15 @@ Now, you can download the artifacts by clicking on the Download button as shown 
 
 The CLI option *--config* is used for providing the custom HyperExecute YAML file (i.e. *yaml/win/cucumber_hyperexecute_matrix_sample.yaml* for Windows and *yaml/linux/cucumber_hyperexecute_matrix_sample.yaml* for Linux).
 
-#### Execute Cucumber tests using Matrix mechanism on Windows platform
+#### Execute Java tests using Matrix mechanism on Windows platform
 
 Run the following command on the terminal to trigger Cucumber tests on the Windows platform. The *--download-artifacts* option is used to inform HyperExecute to download the artifacts for the job. The *--force-clean-artifacts* option force cleans any existing artifacts for the project.
 
 ```bash
-./hyperexecute --config yaml/win/cucumber_hyperexecute_matrix_sample.yaml --force-clean-artifacts --download-artifacts
+./hyperexecute --config yaml/win/junit_hyperexecute_matrix_sample.yaml --force-clean-artifacts --download-artifacts
 ```
 
-#### Execute Cucumber tests using Matrix mechanism on Linux platform
+#### Execute Java tests using Matrix mechanism on Linux platform
 
 Run the following command on the terminal to trigger Cucumber tests on the Linux platform. The *--download-artifacts* option is used to inform HyperExecute to download the artifacts for the job. The *--force-clean-artifacts* option force cleans any existing artifacts for the project.
 
