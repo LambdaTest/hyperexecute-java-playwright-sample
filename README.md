@@ -217,7 +217,7 @@ Run the following command on the terminal to trigger Java tests on the Windows p
 
 #### Execute Java tests using Autosplit mechanism on Linux platform
 
-Run the following command on the terminal to trigger Cucumber tests on the Linux platform. The *--download-artifacts* option is used to inform HyperExecute to download the artifacts for the job. The *--force-clean-artifacts* option force cleans any existing artifacts for the project.
+Run the following command on the terminal to trigger java tests on the Linux platform. The *--download-artifacts* option is used to inform HyperExecute to download the artifacts for the job. The *--force-clean-artifacts* option force cleans any existing artifacts for the project.
 
 ```bash
 ./hyperexecute --config yaml/linux/junit_hyperexecute_autosplit_sample.yaml --force-clean-artifacts --download-artifacts
@@ -327,11 +327,11 @@ Now, you can download the artifacts by clicking on the Download button as shown 
 
 ## Test Execution
 
-The CLI option *--config* is used for providing the custom HyperExecute YAML file (i.e. *yaml/win/cucumber_hyperexecute_matrix_sample.yaml* for Windows and *yaml/linux/cucumber_hyperexecute_matrix_sample.yaml* for Linux).
+The CLI option *--config* is used for providing the custom HyperExecute YAML file (i.e. *yaml/win/junit_hyperexecute_matrix_sample.yaml* for Windows and *yaml/linux/junit_hyperexecute_matrix_sample.yaml* for Linux).
 
 #### Execute Java tests using Matrix mechanism on Windows platform
 
-Run the following command on the terminal to trigger Cucumber tests on the Windows platform. The *--download-artifacts* option is used to inform HyperExecute to download the artifacts for the job. The *--force-clean-artifacts* option force cleans any existing artifacts for the project.
+Run the following command on the terminal to trigger junit tests on the Windows platform. The *--download-artifacts* option is used to inform HyperExecute to download the artifacts for the job. The *--force-clean-artifacts* option force cleans any existing artifacts for the project.
 
 ```bash
 ./hyperexecute --config yaml/win/junit_hyperexecute_matrix_sample.yaml --force-clean-artifacts --download-artifacts
@@ -339,10 +339,10 @@ Run the following command on the terminal to trigger Cucumber tests on the Windo
 
 #### Execute Java tests using Matrix mechanism on Linux platform
 
-Run the following command on the terminal to trigger Cucumber tests on the Linux platform. The *--download-artifacts* option is used to inform HyperExecute to download the artifacts for the job. The *--force-clean-artifacts* option force cleans any existing artifacts for the project.
+Run the following command on the terminal to trigger java tests on the Linux platform. The *--download-artifacts* option is used to inform HyperExecute to download the artifacts for the job. The *--force-clean-artifacts* option force cleans any existing artifacts for the project.
 
 ```bash
-./hyperexecute --config yaml/linux/cucumber_hyperexecute_matrix_sample.yaml --force-clean-artifacts --download-artifacts
+./hyperexecute --config yaml/linux/java_hyperexecute_matrix_sample.yaml --force-clean-artifacts --download-artifacts
 ```
 
 Visit [HyperExecute Automation Dashboard](https://automation.lambdatest.com/hyperexecute) to check the status of execution:
