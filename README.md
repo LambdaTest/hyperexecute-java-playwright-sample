@@ -229,9 +229,9 @@ Visit [HyperExecute Automation Dashboard](https://automation.lambdatest.com/hype
 
 Shown below is the execution screenshot when the YAML file is triggered from the terminal:
 
-<img width="1412" alt="junit_autosplit_cli1_execution" src="images/terminal_output.png">
+<img width="1412" alt="junit_autosplit_cli1_execution" src="images/terminal_output_auto.png">
 
-<img width="1408" alt="junit_autosplit_cli2_execution" src="artifacts_output.png">
+<img width="1408" alt="junit_autosplit_cli2_execution" src="artifacts_output_auto.png">
 
 # Matrix Execution with Java
 
@@ -319,11 +319,11 @@ uploadArtefacts:
 
 HyperExecute also facilitates the provision to download the artifacts on your local machine. To download the artifacts, click on Artifacts button corresponding to the associated TestID.
 
-<img width="1425" alt="cucumber_matrix_artefacts_1" src="https://user-images.githubusercontent.com/1688653/160452786-e60e6ee2-b0e9-4248-81aa-ca07ecbfdd1f.png">
+<img width="1425" alt="images/scenarios_matrix.png">
 
 Now, you can download the artifacts by clicking on the Download button as shown below:
 
-<img width="1425" alt="cucumber_matrix_artefacts_2" src="https://user-images.githubusercontent.com/1688653/160452801-88341e4e-ac9b-41f7-bd21-18f363ef16f5.png">
+<img width="1425" alt="junit_matrix_artefacts_2" src="artifacts_matrix.png">
 
 ## Test Execution
 
@@ -347,23 +347,23 @@ Run the following command on the terminal to trigger java tests on the Linux pla
 
 Visit [HyperExecute Automation Dashboard](https://automation.lambdatest.com/hyperexecute) to check the status of execution:
 
-<img width="1414" alt="cucumber_matrix_execution" src="https://user-images.githubusercontent.com/1688653/160452786-e60e6ee2-b0e9-4248-81aa-ca07ecbfdd1f.png">
+<img width="1414" alt="junit_matrix_execution" src="https://user-images.githubusercontent.com/1688653/160452786-e60e6ee2-b0e9-4248-81aa-ca07ecbfdd1f.png">
 
 Shown below is the execution screenshot when the YAML file is triggered from the terminal:
 
-<img width="1413" alt="cucumber_cli1_execution" src="https://user-images.githubusercontent.com/1688653/159763909-305b13b7-df13-43de-b115-09565387edce.png">
+<img width="1413" alt="junit_cli1_execution" src="terminal_output_matrix.png">
 
-<img width="1101" alt="cucumber_cli2_execution" src="https://user-images.githubusercontent.com/1688653/159763911-61ba72e1-ed47-40c8-914a-2a8e3ab8db2a.png">
+<img width="1101" alt="junit_cli2_execution" src="artifacts_output_matrix.png">
 
 ## Secrets Management
 
 In case you want to use any secret keys in the YAML file, the same can be set by clicking on the *Secrets* button the dashboard.
 
-<img width="703" alt="cucumber_secrets_key_1" src="https://user-images.githubusercontent.com/1688653/152540968-90e4e8bc-3eb4-4259-856b-5e513cbd19b5.png">
+<img width="703" alt="junit_secrets_key_1" src="https://user-images.githubusercontent.com/1688653/152540968-90e4e8bc-3eb4-4259-856b-5e513cbd19b5.png">
 
 Now create a *secret* key that you can use in the HyperExecute YAML file.
 
-<img width="359" alt="cucumber_management_1" src="https://user-images.githubusercontent.com/1688653/153250877-e58445d1-2735-409a-970d-14253991c69e.png">
+<img width="359" alt="junit_management_1" src="https://user-images.githubusercontent.com/1688653/153250877-e58445d1-2735-409a-970d-14253991c69e.png">
 
 All you need to do is create an environment variable that uses the secret key:
 
@@ -378,11 +378,7 @@ HyperExecute lets you navigate from/to *Test Logs* in Automation Dashboard from/
 
 Shown below is the HyperExecute Automation dashboard which also lists the tests that were executed as a part of the test suite:
 
-<img width="1429" alt="cucumber_hyperexecute_automation_dashboard" src="https://user-images.githubusercontent.com/1688653/160452786-e60e6ee2-b0e9-4248-81aa-ca07ecbfdd1f.png">
-
-Here is a screenshot that lists the automation test that was executed on the HyperExecute grid:
-
-<img width="1429" alt="cucumber_testing_automation_dashboard" src="https://user-images.githubusercontent.com/1688653/159763904-c5c6e1f2-394b-48b0-aadf-541a7c9dbeae.png">
+<img width="1429" alt="junit_hyperexecute_automation_dashboard" src="automation.png">
 
 ## LambdaTest Community :busts_in_silhouette:
 
