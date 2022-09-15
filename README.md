@@ -323,7 +323,7 @@ HyperExecute also facilitates the provision to download the artifacts on your lo
 
 Now, you can download the artifacts by clicking on the Download button as shown below:
 
-<img width="1425" alt="junit_matrix_artefacts_2" src="artifacts_matrix.png">
+<img width="1425" alt="junit_matrix_artefacts_2" src="images/artifacts_matrix.png">
 
 ## Test Execution
 
@@ -347,13 +347,13 @@ Run the following command on the terminal to trigger java tests on the Linux pla
 
 Visit [HyperExecute Automation Dashboard](https://automation.lambdatest.com/hyperexecute) to check the status of execution:
 
-<img width="1414" alt="junit_matrix_execution" src="https://user-images.githubusercontent.com/1688653/160452786-e60e6ee2-b0e9-4248-81aa-ca07ecbfdd1f.png">
+<img width="1414" alt="junit_matrix_execution" src="images/scenarios_matrix.png">
 
 Shown below is the execution screenshot when the YAML file is triggered from the terminal:
 
-<img width="1413" alt="junit_cli1_execution" src="terminal_output_matrix.png">
+<img width="1413" alt="junit_cli1_execution" src="images/terminal_output_matrix.png">
 
-<img width="1101" alt="junit_cli2_execution" src="artifacts_output_matrix.png">
+<img width="1101" alt="junit_cli2_execution" src="images/artifacts_output-matrix.png">
 
 ## Secrets Management
 
