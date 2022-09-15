@@ -319,7 +319,7 @@ uploadArtefacts:
 
 HyperExecute also facilitates the provision to download the artifacts on your local machine. To download the artifacts, click on Artifacts button corresponding to the associated TestID.
 
-<img width="1425" alt="images/scenarios_matrix.png">
+<img width="1425" alt="images/scenarios_matrix.png" src="images/scenarios_matrix.png">
 
 Now, you can download the artifacts by clicking on the Download button as shown below:
 
