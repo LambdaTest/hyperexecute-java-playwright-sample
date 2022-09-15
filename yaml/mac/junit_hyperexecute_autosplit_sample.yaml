@@ -37,9 +37,6 @@ post:
 mergeArtifacts: true
 
 uploadArtefacts:
- - name: Final-Report
-   path:
-    - target/site/**
  - name: Surefire-Report
    path:
     - target/surefire-reports/**

@@ -13,7 +13,7 @@ concurrency: 3
 env:
   # PAT: ${{ .secrets.testKey }}
   CACHE_DIR: m2_cache_dir
-  TARGET_OS: Windows 11
+  TARGET_OS: Windows 10
 
 # Dependency caching for Windows
 cacheKey: '{{ checksum "pom.xml" }}'
@@ -37,9 +37,6 @@ post:
 mergeArtifacts: true
 
 uploadArtefacts:
- - name: Final Report
-   path:
-    - target/site/**
  - name: Surefire Report
    path:
     - target/surefire-reports/**
