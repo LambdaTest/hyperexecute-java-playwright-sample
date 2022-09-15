@@ -190,9 +190,6 @@ The uploadArtefacts directive informs HyperExecute to upload artifacts [files, r
 mergeArtifacts: true
 
 uploadArtefacts:
- - name: Final Report
-   path:
-    - target/site/**
  - name: Surefire Report
    path:
     - target/surefire-reports/**
@@ -315,9 +312,6 @@ The uploadArtefacts directive informs HyperExecute to upload artifacts [files, r
 mergeArtifacts: true
 
 uploadArtefacts:
- - name: Final Report
-   path:
-    - target/site/**
  - name: Surefire Report
    path:
     - target/surefire-reports/**
