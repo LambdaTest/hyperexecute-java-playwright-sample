@@ -197,11 +197,11 @@ uploadArtefacts:
 
 HyperExecute also facilitates the provision to download the artifacts on your local machine. To download the artifacts, click on Artifacts button corresponding to the associated TestID.
 
-<img width="1425" alt="cucumber_autosplit_artefacts_1" src="https://user-images.githubusercontent.com/1688653/160453348-67a416d9-ec37-4467-9a51-1b20484f39f1.png">
+<img width="1425" alt="junit_autosplit_artefacts_1" src="images/pre.png">
 
 Now, you can download the artifacts by clicking on the Download button as shown below:
 
-<img width="1425" alt="cucumber_autosplit_artefacts_2" src="https://user-images.githubusercontent.com/1688653/160453362-aa371377-0d81-4140-8a7a-b6170310ac15.png">
+<img width="1425" alt="junit_autosplit_artefacts_2" src="images/artifacts.png">
 
 ### Test Execution
 
@@ -225,13 +225,13 @@ Run the following command on the terminal to trigger java tests on the Linux pla
 
 Visit [HyperExecute Automation Dashboard](https://automation.lambdatest.com/hyperexecute) to check the status of execution
 
-<img width="1414" alt="cucumber_autosplit_execution" src="https://user-images.githubusercontent.com/1688653/160453348-67a416d9-ec37-4467-9a51-1b20484f39f1.png">
+<img width="1414" alt="junit_autosplit_execution" src="images/pre.png">
 
 Shown below is the execution screenshot when the YAML file is triggered from the terminal:
 
-<img width="1412" alt="cucumber_autosplit_cli1_execution" src="https://user-images.githubusercontent.com/1688653/159763098-bbb5af76-bf4f-42f3-a4f0-fc1dda8347b3.png">
+<img width="1412" alt="junit_autosplit_cli1_execution" src="images/terminal_output.png">
 
-<img width="1408" alt="cucumber_autosplit_cli2_execution" src="https://user-images.githubusercontent.com/1688653/159763105-58c49a6b-68e2-4e1e-a413-b03dc23ad03d.png">
+<img width="1408" alt="junit_autosplit_cli2_execution" src="artifacts_output.png">
 
 # Matrix Execution with Java
 
