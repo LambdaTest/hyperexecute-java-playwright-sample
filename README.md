@@ -201,7 +201,7 @@ HyperExecute also facilitates the provision to download the artifacts on your lo
 
 Now, you can download the artifacts by clicking on the Download button as shown below:
 
-<img width="1425" alt="junit_autosplit_artefacts_2" src="images/artifacts.png">
+<img width="1425" alt="junit_autosplit_artefacts_2" src="images/artifacts_auto.png">
 
 ### Test Execution
 
