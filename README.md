@@ -231,7 +231,7 @@ Shown below is the execution screenshot when the YAML file is triggered from the
 
 <img width="1412" alt="junit_autosplit_cli1_execution" src="images/terminal_output_auto.png">
 
-<img width="1408" alt="junit_autosplit_cli2_execution" src="artifacts_output_auto.png">
+<img width="1408" alt="junit_autosplit_cli2_execution" src="images/artifacts_output_auto.png">
 
 # Matrix Execution with Java
 
