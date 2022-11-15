@@ -21,7 +21,6 @@ env:
 cacheKey: '{{ checksum "pom.xml" }}'
 cacheDirectories:
   - $CACHE_DIR
-debug: true 
 shell: bash
 
 pre:
