@@ -7,8 +7,8 @@ testSuiteStep: 150
 runson: win
 retryOnFailure: true
 
-maxRetries: 5
-concurrency: 3
+maxRetries: 1
+concurrency: 1
 
 env:
   # PAT: ${{ .secrets.testKey }}
