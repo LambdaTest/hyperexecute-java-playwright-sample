@@ -9,8 +9,8 @@ runson: mac
 autosplit: true
 retryOnFailure: true
 
-maxRetries: 5
-concurrency: 3
+maxRetries: 1
+concurrency: 1
 
 env:
   # PAT: ${{ .secrets.testKey }}
