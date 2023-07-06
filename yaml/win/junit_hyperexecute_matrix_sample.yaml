@@ -43,3 +43,5 @@ uploadArtefacts:
 
 testSuites:
   - mvn `-Dplatname=win `-Dmaven.repo.local=m2_cache_dir `-Dtest=$classname test surefire-report:report
+
+jobLabel: [playwright-Junit, win, matrix] 

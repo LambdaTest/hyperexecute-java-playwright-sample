@@ -47,3 +47,5 @@ testDiscovery:
   command: grep 'public class' src/test/java/SampleTest.java | awk '{print$3}'
 
 testRunnerCommand:  mvn test `-Dplatname=win `-Dmaven.repo.local=m2_cache_dir `-Dplatname=win `-Dtest=$test surefire-report:report
+
+jobLabel: [playwright-Junit, win, autosplit] 
