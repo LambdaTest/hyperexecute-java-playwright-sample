@@ -17,7 +17,8 @@ public class SampleTest extends  BaseTest{
      driver = super.createConnection(capability);
      page = driver.getPage();
      page.navigate("http://whatsmyuseragent.org/");
-     if(page.title().equalsIgnoreCase("What's my User Agent?")){
+     page.waitForTimeout(5000);
+     if(page.title().equalsIgnoreCase("Whatsmyuseragent.org")){
        super.setTestStatus("passed","Title matched",page);
      } else {
        super.setTestStatus("failed","Title not matched",page);
