@@ -8,19 +8,18 @@ runson: linux
 retryOnFailure: true
 
 maxRetries: 1
-concurrency: 3
+concurrency: 2
 
 env:
   # PAT: ${{ .secrets.testKey }}
-  CACHE_DIR: m2_cache_dir
   TARGET_OS: linux
 
 cacheKey: '{{ checksum "pom.xml" }}'
 cacheDirectories:
-  - ${CACHE_DIR}
+  - .m2
 
 matrix:
-  classname: ["SampleTest"]
+  classname: ["SampleTest1","SampleTest2"]
 
 shell: bash
 
@@ -29,7 +28,7 @@ pre:
   - npm install playwright@1.23.0 --save-exact
   # Download and install packages in the CACHE_DIR.
   # Skip execution of the tests in the pre step
-  - mvn -Dmaven.repo.local=${CACHE_DIR} -Dmaven.test.skip=true clean install
+  - mvn -Dmaven.repo.local=./.m2 -Dmaven.test.skip=true clean install
 
 post:
   - cat yaml/linux/junit_hyperexecute_matrix_sample.yaml
@@ -42,6 +41,6 @@ uploadArtefacts:
     - target/surefire-reports/**
 
 testSuites:
-  - mvn -Dplatname=linux -Dmaven.repo.local=m2_cache_dir -Dtest=$classname test surefire-report:report
+  - mvn -Dplatname=linux -Dmaven.repo.local=./.m2 -Dtest=$classname test surefire-report:report
 
 jobLabel: [playwright-Junit, linux, matrix] 
