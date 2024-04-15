@@ -10,16 +10,15 @@ autosplit: true
 retryOnFailure: false
 
 maxRetries: 1
-concurrency: 1
+concurrency: 2
 
 env:
   # PAT: ${{ .secrets.testKey }}
-  CACHE_DIR: m2_cache_dir
   TARGET_OS: linux
 
 cacheKey: '{{ checksum "pom.xml" }}'
 cacheDirectories:
-  - ${CACHE_DIR}
+  - .m2
 
 shell: bash
 
@@ -28,7 +27,7 @@ pre:
   - npm install playwright@1.23.0 --save-exact
   # Download and install packages in the CACHE_DIR.
   # Skip execution of the tests in the pre step
-  - mvn -Dmaven.repo.local=${CACHE_DIR} -Dmaven.test.skip=true clean install
+  - mvn -Dmaven.repo.local=./.m2 -Dmaven.test.skip=true clean install
 
 post:
   - cat yaml/linux/junit_hyperexecute_autosplit_sample.yaml
@@ -43,8 +42,8 @@ uploadArtefacts:
 testDiscovery:
   type: raw
   mode: dynamic
-  command: grep 'public class' src/test/java/SampleTest.java | awk '{print$3}'
+  command: grep -rl '@Test' src/test/java | awk -F'/' '{print substr($NF, 1, length($NF)-5)}'
 
-testRunnerCommand: mvn -Dplatname=linux -Dmaven.repo.local=m2_cache_dir -Dtest=$test test surefire-report:report
+testRunnerCommand: mvn -Dplatname=linux -Dmaven.repo.local=./.m2 -Dtest=$test test surefire-report:report
 
 jobLabel: [playwright-Junit, linux, autosplit] 
