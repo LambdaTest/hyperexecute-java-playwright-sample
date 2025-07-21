@@ -21,6 +21,7 @@ public class LTCapability {
     ltOptions1.addProperty("accessKey", accessKey);
     ltOptions1.addProperty("video", true);
     ltOptions1.addProperty("console", true);
+    ltOptions1.addProperty("visual", true);
     capabilities1.add("LT:Options", ltOptions1);
 
     return new Object[]{
