@@ -6,6 +6,11 @@ testSuiteStep: 150
 
 runson: mac
 
+runtime: 
+  language: java
+  version: 21
+
+
 autosplit: true
 retryOnFailure: true
 
@@ -42,7 +47,7 @@ uploadArtefacts:
 testDiscovery:
   type: raw
   mode: dynamic
-  command: grep -rl '@Test' src/test/java | awk -F'/' '{print substr($NF, 1, length($NF)-5)}'
+  command: grep -rl '@ParameterizedTest' src/test/java | awk -F'/' '{print substr($NF, 1, length($NF)-5)}'
 
 testRunnerCommand: mvn -Dplatname=mac -Dmaven.repo.local=./.m2 -Dtest=$test test surefire-report:report
 

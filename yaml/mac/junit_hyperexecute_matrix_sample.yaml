@@ -5,6 +5,11 @@ testSuiteTimeout: 150
 testSuiteStep: 150
 
 runson: mac
+
+runtime: 
+  language: java
+  version: 21
+
 retryOnFailure: true
 
 maxRetries: 1
