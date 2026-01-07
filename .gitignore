@@ -1,2 +1,8 @@
 /.metadata/
 /.hyperexecute/
+target/
+hyperexecute
+hyperexecute-cli.log
+artifacts*/
+.vscode/
+.updatedhyperexecute.yaml
