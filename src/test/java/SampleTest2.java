@@ -39,7 +39,7 @@ public class SampleTest2 extends BaseTest {
       page.locator("text=Visual comparisons").first().click();
       page.locator("text=Fixtures").first().click();
       page.locator("text=TypeScript").first().click();
-      page.locator("text=Components (experimental)").first().click();
+      page.locator("text=Component testing").first().click();
       page.locator("text=Library").first().click();
       page.locator("text=Auto-waiting").first().click();
       page.locator("text=Authentication").first().click();

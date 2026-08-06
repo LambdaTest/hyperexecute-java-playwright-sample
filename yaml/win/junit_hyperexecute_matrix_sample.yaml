@@ -30,7 +30,7 @@ matrix:
 
 pre:
  # install playwright version to be used.
-  - npm install playwright@1.23.0 --save-exact
+  - npm install playwright@1.57.0 --save-exact
   # Download and install packages in the .m2 folder.
   # Skip execution of the tests in the pre step
   - mvn -Dmaven.repo.local=./.m2 -Dmaven.test.skip=true clean install
