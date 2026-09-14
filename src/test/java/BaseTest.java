@@ -14,6 +14,8 @@ public abstract class BaseTest {
       String cdpUrl = "wss://cdp.lambdatest.com/playwright?capabilities=" + caps;
       Browser browser = playwright.chromium().connect(cdpUrl);
       Page page = browser.newPage();
+      // Give the newly created remote session time to settle before the first action
+      Thread.sleep(10000);
       return new Driver(browser,page);
     }
     catch (Exception e){
